@@ -1,9 +1,23 @@
+import { style } from '@mui/system';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function MyForm() {
+  const style = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "#f8f9fa",
+    fontFamily: "Poppins",
+    fontSize: "13px",
+    padding: "20px",
+    borderRadius: "10px",
+    boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+  };
+
+
   return (
-    <Form>
+    <Form style={style}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Title</Form.Label>
         <Form.Control type="text" />
@@ -53,5 +67,8 @@ function MyForm() {
     </Form>
   );
 }
+
+
+
 
 export default MyForm;
